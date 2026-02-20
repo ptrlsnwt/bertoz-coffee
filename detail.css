@@ -1,0 +1,144 @@
+.product-detail {
+    padding: 8rem 4rem 4rem;
+    background-color: #f5f3ef;
+}
+
+.detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.detail-gambar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.detail-gambar-img {
+    width: 48%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 24px;
+
+}
+
+.gambar-utama {
+    width: 100%;
+    height: 300px;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-judul {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.detail-asal {
+    font-size: 1.2rem;
+    color: #5a6c5f;
+    margin-bottom: 1.5rem;
+}
+
+.detail-harga {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.detail-deskripsi {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5a6c5f;
+    margin-bottom: 2.5rem;
+}
+
+
+.pembelian {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 40px;
+    background-color: white;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+
+.pembelian-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #efeeee;
+    color: #2d4a3e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pembelian-jumlah {
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+.beli-btn {
+    background-color: #2d4a3e;
+    color: #ffffff;
+    padding: 1rem 3.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.beli-btn:hover {
+    background-color: #1c352a;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        padding: 7rem 1.5rem 3rem;
+    }
+
+    .detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .detail-gambar-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .detail-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .detail-judul {
+        font-size: 2.2rem;
+    }
+
+    .detail-harga {
+        font-size: 1.5rem;
+    }
+
+    .beli-btn {
+        width: 100%;
+    }
+}
